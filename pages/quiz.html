@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест - EnglishCheck</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="quiz-info">
+                <span id="question-counter" class="question-counter">Вопрос 1 из 20</span>
+                <div id="timer" class="timer hidden">15:00</div>
+            </div>
+        </header>
+
+        <main class="quiz-main">
+            <div id="question-container" class="question-container">
+                <!-- Вопросы загружаются через JS -->
+            </div>
+        </main>
+
+        <footer class="quiz-footer">
+            <button id="next-btn" class="btn btn-primary" disabled>Следующий</button>
+        </footer>
+    </div>
+
+    <script type="module" src="../js/quiz.js"></script>
+</body>
+</html>

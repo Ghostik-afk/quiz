@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты - EnglishCheck</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/results.css">
+</head>
+<body>
+    <div class="results-container">
+        <header class="results-header">
+            <h1>Ваши результаты</h1>
+        </header>
+
+        <main class="results-main">
+            <section class="score-section">
+                <div class="score-circle">
+                    <canvas id="score-chart" width="200" height="200"></canvas>
+                    <div class="score-text">
+                        <span id="score-value" class="score-value">0</span>
+                        <span class="score-total">/ <span id="total-questions">20</span></span>
+                    </div>
+                </div>
+                <div class="score-details">
+                    <h2 id="level-result" class="level-result">Ваш уровень: B1</h2>
+                    <p id="score-percentage" class="score-percentage">85%</p>
+                    <p id="time-spent" class="time-spent">Время: 12:34</p>
+                </div>
+            </section>
+
+            <section class="breakdown-section">
+                <h3>Разбор вопросов</h3>
+                <div id="questions-breakdown" class="questions-breakdown">
+                    <!-- Разбор загружается через JS -->
+                </div>
+            </section>
+
+            <section class="actions-section">
+                <button id="share-btn" class="btn btn-secondary">Поделиться результатом</button>
+                <button id="retry-btn" class="btn btn-outline">Пройти снова</button>
+                <a href="../index.html" class="btn btn-primary">Выбрать другой тест</a>
+            </section>
+        </main>
+    </div>
+
+    <canvas id="share-canvas" class="hidden"></canvas>
+    <script type="module" src="../js/results.js"></script>
+</body>
+</html>

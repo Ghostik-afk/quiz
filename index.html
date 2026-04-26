@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishCheck - Проверь свой английский</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>EnglishCheck</h1>
+                <p class="tagline">Проверь свой уровень английского</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <h2>Узнай свой реальный уровень за 15 минут</h2>
+                <p>Пройди тест и получи детальный разбор с рекомендациями</p>
+            </section>
+
+            <section class="how-it-works">
+                <h3>Как это работает</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">1</div>
+                        <h4>Выбери тест</h4>
+                        <p>Выбери уровень и количество вопросов</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">2</div>
+                        <h4>Пройди тест</h4>
+                        <p>Отвечай на вопросы в удобном темпе</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">3</div>
+                        <h4>Получи результат</h4>
+                        <p>Узнай свой уровень и разбор ошибок</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tests-section">
+                <h3>Доступные тесты</h3>
+                <div id="tests-container" class="tests-grid">
+                    <!-- Карточки тестов загружаются через JS -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 EnglishCheck by Сергей</p>
+        </footer>
+    </div>
+
+    <div id="test-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Настройки теста</h3>
+            <form id="test-setup-form">
+                <div class="form-group">
+                    <label for="student-name">Ваше имя *</label>
+                    <input type="text" id="student-name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label>Количество вопросов</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="questions-count" value="10"> 10 вопросов</label>
+                        <label><input type="radio" name="questions-count" value="20" checked> 20 вопросов</label>
+                        <label><input type="radio" name="questions-count" value="30"> 30 вопросов</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="enable-timer" checked>
+                        Включить таймер (15 минут)
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Поехали!</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/admin-access.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(() => console.log('Service Worker registered'))
+                .catch(err => console.log('Service Worker registration failed:', err));
+        }
+    </script>
+</body>
+</html>

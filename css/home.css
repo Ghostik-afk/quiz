@@ -1,0 +1,248 @@
+.header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.how-it-works {
+    padding: 3rem 0;
+    background: white;
+    border-radius: var(--radius-xl);
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.how-it-works h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-primary);
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-icon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.step h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.step p {
+    color: var(--text-secondary);
+}
+
+.tests-section {
+    padding: 2rem 0 4rem;
+}
+
+.tests-section h3 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.tests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.test-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.test-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.test-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.test-card h4 {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.test-level {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.test-level.level-a1,
+.test-level.level-a2 {
+    background: var(--secondary-color);
+}
+
+.test-level.level-b1,
+.test-level.level-b2 {
+    background: var(--primary-color);
+}
+
+.test-level.level-c1,
+.test-level.level-c2 {
+    background: #8b5cf6;
+}
+
+.test-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+.test-card-info span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.test-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-attempts {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+}
+
+.admin-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.875rem;
+}
+
+.admin-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .tests-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 2rem 0 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.75rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .test-card {
+        padding: 1.25rem;
+    }
+}

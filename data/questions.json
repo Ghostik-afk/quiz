@@ -1,0 +1,311 @@
+[
+  {
+    "id": 1,
+    "level": "A2",
+    "type": "single",
+    "question": "Choose the correct form: She ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correct": 1,
+    "explanation": "'Goes' используется с he/she/it в Present Simple"
+  },
+  {
+    "id": 2,
+    "level": "A2",
+    "type": "single",
+    "question": "What ___ you doing right now?",
+    "options": ["is", "are", "am", "be"],
+    "correct": 1,
+    "explanation": "'Are' используется с 'you' в Present Continuous"
+  },
+  {
+    "id": 3,
+    "level": "A2",
+    "type": "single",
+    "question": "I ___ a book yesterday.",
+    "options": ["read", "reads", "reading", "readed"],
+    "correct": 0,
+    "explanation": "'Read' (прошедшая форма) используется в Past Simple"
+  },
+  {
+    "id": 4,
+    "level": "A2",
+    "type": "boolean",
+    "question": "The sentence 'He don't like coffee' is correct.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "Правильно: 'He doesn't like coffee' (с does для he/she/it)"
+  },
+  {
+    "id": 5,
+    "level": "A2",
+    "type": "input",
+    "question": "Complete: I ___ (be) happy.",
+    "correctAnswer": "am",
+    "explanation": "'Am' используется с 'I'"
+  },
+  {
+    "id": 6,
+    "level": "A2",
+    "type": "single",
+    "question": "There ___ many people in the park.",
+    "options": ["is", "are", "was", "be"],
+    "correct": 1,
+    "explanation": "'Are' используется с множественным числом 'people'"
+  },
+  {
+    "id": 7,
+    "level": "A2",
+    "type": "single",
+    "question": "My brother is ___ than me.",
+    "options": ["tall", "taller", "tallest", "more tall"],
+    "correct": 1,
+    "explanation": "Сравнительная степень коротких прилагательных: tall → taller"
+  },
+  {
+    "id": 8,
+    "level": "A2",
+    "type": "single",
+    "question": "I ___ to London last year.",
+    "options": ["go", "went", "gone", "going"],
+    "correct": 1,
+    "explanation": "'Went' — прошедшая форма глагола 'go'"
+  },
+  {
+    "id": 9,
+    "level": "A2",
+    "type": "boolean",
+    "question": "We use 'a' before words starting with vowel sounds.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "Перед гласными звуками используется 'an', не 'a'"
+  },
+  {
+    "id": 10,
+    "level": "A2",
+    "type": "input",
+    "question": "Complete: They ___ (play) football now.",
+    "correctAnswer": "are playing",
+    "explanation": "Present Continuous: are + playing"
+  },
+  {
+    "id": 11,
+    "level": "B1",
+    "type": "single",
+    "question": "If I ___ you, I would accept the offer.",
+    "options": ["am", "was", "were", "be"],
+    "correct": 2,
+    "explanation": "В условных предложениях 2-го типа используется 'were' для всех лиц"
+  },
+  {
+    "id": 12,
+    "level": "B1",
+    "type": "single",
+    "question": "She has been working here ___ 2020.",
+    "options": ["for", "since", "from", "during"],
+    "correct": 1,
+    "explanation": "'Since' используется с конкретным моментом времени"
+  },
+  {
+    "id": 13,
+    "level": "B1",
+    "type": "single",
+    "question": "The report ___ by tomorrow morning.",
+    "options": ["will finish", "will be finished", "will finishing", "is finishing"],
+    "correct": 1,
+    "explanation": "Пассивный залог в будущем времени: will be + past participle"
+  },
+  {
+    "id": 14,
+    "level": "B1",
+    "type": "boolean",
+    "question": "The sentence 'I have been to Paris last year' is correct.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "С 'last year' используется Past Simple: 'I went to Paris last year'"
+  },
+  {
+    "id": 15,
+    "level": "B1",
+    "type": "input",
+    "question": "Complete: I wish I ___ (can) speak Spanish.",
+    "correctAnswer": "could",
+    "explanation": "После 'wish' используется прошедшая форма модального глагола"
+  },
+  {
+    "id": 16,
+    "level": "B1",
+    "type": "single",
+    "question": "He suggested ___ to the cinema.",
+    "options": ["to go", "going", "go", "went"],
+    "correct": 1,
+    "explanation": "После 'suggest' используется герундий (V-ing)"
+  },
+  {
+    "id": 17,
+    "level": "B1",
+    "type": "single",
+    "question": "By the time you arrive, I ___ dinner.",
+    "options": ["will cook", "will have cooked", "cook", "am cooking"],
+    "correct": 1,
+    "explanation": "Future Perfect для действия, которое завершится к определенному моменту"
+  },
+  {
+    "id": 18,
+    "level": "B1",
+    "type": "single",
+    "question": "The book ___ I bought yesterday is very interesting.",
+    "options": ["who", "which", "what", "where"],
+    "correct": 1,
+    "explanation": "'Which' используется для неодушевленных предметов"
+  },
+  {
+    "id": 19,
+    "level": "B1",
+    "type": "boolean",
+    "question": "We can use 'much' with countable nouns.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "'Much' используется с неисчисляемыми существительными, 'many' — с исчисляемыми"
+  },
+  {
+    "id": 20,
+    "level": "B1",
+    "type": "input",
+    "question": "Complete: She made me ___ (wait) for an hour.",
+    "correctAnswer": "wait",
+    "explanation": "После 'make' используется инфинитив без 'to'"
+  },
+  {
+    "id": 21,
+    "level": "B2",
+    "type": "single",
+    "question": "Had I known about the meeting, I ___ attended.",
+    "options": ["would have", "will have", "would", "will"],
+    "correct": 0,
+    "explanation": "Инверсия в условных предложениях 3-го типа: would have + past participle"
+  },
+  {
+    "id": 22,
+    "level": "B2",
+    "type": "single",
+    "question": "The project is ___ completion.",
+    "options": ["on", "in", "at", "under"],
+    "correct": 3,
+    "explanation": "'Under completion' означает 'в процессе завершения'"
+  },
+  {
+    "id": 23,
+    "level": "B2",
+    "type": "single",
+    "question": "She is said ___ abroad for five years.",
+    "options": ["to live", "to have lived", "living", "lived"],
+    "correct": 1,
+    "explanation": "Perfect Infinitive для действия, предшествующего моменту речи"
+  },
+  {
+    "id": 24,
+    "level": "B2",
+    "type": "boolean",
+    "question": "The phrase 'I'm used to wake up early' is grammatically correct.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "Правильно: 'I'm used to waking up early' (to + герундий)"
+  },
+  {
+    "id": 25,
+    "level": "B2",
+    "type": "input",
+    "question": "Complete: Scarcely ___ (he/arrive) when the phone rang.",
+    "correctAnswer": "had he arrived",
+    "explanation": "После 'scarcely' используется инверсия с Past Perfect"
+  },
+  {
+    "id": 26,
+    "level": "B2",
+    "type": "single",
+    "question": "The committee ___ reached a decision yet.",
+    "options": ["hasn't", "haven't", "isn't", "aren't"],
+    "correct": 0,
+    "explanation": "'Committee' может быть единственным числом в британском английском"
+  },
+  {
+    "id": 27,
+    "level": "B2",
+    "type": "single",
+    "question": "I'd rather you ___ smoke in here.",
+    "options": ["don't", "didn't", "won't", "wouldn't"],
+    "correct": 1,
+    "explanation": "После 'would rather' используется Past Simple для настоящего/будущего"
+  },
+  {
+    "id": 28,
+    "level": "B2",
+    "type": "single",
+    "question": "The results were ___ we expected.",
+    "options": ["as good as", "so good as", "good as", "as good"],
+    "correct": 0,
+    "explanation": "'As...as' используется для сравнения в утвердительных предложениях"
+  },
+  {
+    "id": 29,
+    "level": "B2",
+    "type": "boolean",
+    "question": "The sentence 'Despite of the rain, we went out' is correct.",
+    "options": ["true", "false"],
+    "correct": 1,
+    "explanation": "Правильно: 'Despite the rain' (без 'of')"
+  },
+  {
+    "id": 30,
+    "level": "B2",
+    "type": "input",
+    "question": "Complete: Not only ___ (she/pass) the exam, but she got the highest score.",
+    "correctAnswer": "did she pass",
+    "explanation": "После 'not only' в начале предложения используется инверсия"
+  },
+  {
+    "id": 31,
+    "level": "A2",
+    "type": "single",
+    "question": "Can you help ___ with this problem?",
+    "options": ["I", "me", "my", "mine"],
+    "correct": 1,
+    "explanation": "После глагола используется объектный падеж 'me'"
+  },
+  {
+    "id": 32,
+    "level": "B1",
+    "type": "single",
+    "question": "I'm looking forward ___ you again.",
+    "options": ["to see", "to seeing", "see", "seeing"],
+    "correct": 1,
+    "explanation": "После 'look forward to' используется герундий"
+  },
+  {
+    "id": 33,
+    "level": "B2",
+    "type": "single",
+    "question": "The meeting has been put ___ until next week.",
+    "options": ["off", "on", "up", "down"],
+    "correct": 0,
+    "explanation": "'Put off' означает 'отложить'"
+  },
+  {
+    "id": 34,
+    "level": "A2",
+    "type": "single",
+    "question": "This is ___ interesting book.",
+    "options": ["a", "an", "the", "-"],
+    "correct": 1,
+    "explanation": "'An' используется перед словами, начинающимися с гласного звука"
+  },
+  {
+    "id": 35,
+    "level": "B1",
+    "type": "single",
+    "question": "She avoided ___ about her plans.",
+    "options": ["to talk", "talking", "talk", "talked"],
+    "correct": 1,
+    "explanation": "После 'avoid' используется герундий"
+  }
+]
