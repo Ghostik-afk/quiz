@@ -1,13 +1,21 @@
 export async function loadQuestions() {
     try {
-        // Определяем базовый путь в зависимости от окружения
-        const basePath = window.location.pathname.includes('/pages/')
-            ? '../data/questions.json'
-            : './data/questions.json';
+        // Получаем базовый путь для GitHub Pages
+        const pathSegments = window.location.pathname.split('/').filter(Boolean);
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const repoName = isGitHubPages && pathSegments.length > 0 ? pathSegments[0] : '';
+
+        // Определяем путь в зависимости от текущей страницы
+        let basePath;
+        if (window.location.pathname.includes('/pages/')) {
+            basePath = isGitHubPages ? `/${repoName}/data/questions.json` : '../data/questions.json';
+        } else {
+            basePath = isGitHubPages ? `/${repoName}/data/questions.json` : './data/questions.json';
+        }
 
         const response = await fetch(basePath);
         if (!response.ok) {
-            throw new Error('Failed to load questions');
+            throw new Error(`Failed to load questions: ${response.status} ${response.statusText}`);
         }
         return await response.json();
     } catch (error) {
